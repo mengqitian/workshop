@@ -6,6 +6,91 @@
     <title>Workshop</title>
 </head>
 <body>
-    <h1>Workshop</h1>
+    <header>
+        <p class="title">CVPR Workshop</p>
+        <div class="navbar-group">
+            <a>Overview</a>
+            <a>Program</a>
+            <a>Call for Paper</a>
+            <a>Call for Data Challenge</a>
+            <a>Organizers</a>
+            <a>Follow us</a>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="title-wrap">
+            <h2>
+                <img src="./images/banner-title.svg">
+                <span>CVPR</span>
+            </h2>
+            <h1>VISION’23</h1>
+            <h3>VANCOUVER, CANADA</h3>
+        </div>
+    </div>
 </body>
 </html>
+
+<style>
+body, p, h1, h2, h3 {
+    margin: 0;
+    font-family: -apple-system, -apple-system-font, HelveticaNeue, "Helvetica Neue", Helvetica, sans-serif;
+    color: #1D1D1F;
+}
+a {
+    cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 16%;
+    line-height: 26px;
+    background: #F7F7F7;
+}
+header .title {
+    font-weight: 600;
+}
+.navbar-group a {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 14px;
+}
+.banner {
+    padding: 80px 16%;
+    background-image: url('./images/banner-background.svg');
+    background-size: cover;
+}
+.banner .title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+.banner .title-wrap h1, .banner .title-wrap h2, .banner .title-wrap h3 {
+    width: fit-content;
+    color: #FFFFFF;
+}
+.banner .title-wrap h1 {
+    margin-bottom: 16px;
+    line-height: 70px;
+    font-size: 100px;
+}
+.banner .title-wrap h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 46px;
+    font-size: 66px;
+}
+.banner .title-wrap h2 img {
+    margin-right: 6px;
+}
+.banner .title-wrap h3 {
+    padding: 8px 0;
+    line-height: 28px;
+    font-size: 32px;
+    letter-spacing: 4.46px;
+    border-top: 1.5px solid #FFFFFF;
+}
+</style>

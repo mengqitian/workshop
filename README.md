@@ -1,1 +1,1 @@
-# workshop
+# CVPR Workshop website
