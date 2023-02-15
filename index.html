@@ -79,7 +79,7 @@
         </div>
         <div class="part-line"><span></span><img src="./images/flower.svg"><span></span></div>
         <h1 id="Program">Program</h1>
-        <table>
+        <table class="program-table">
             <thead>
                 <tr>
                     <th>Time</th>
@@ -247,10 +247,27 @@
         <div class="part-line"><span></span><img src="./images/flower.svg"><span></span></div>
         <h1 id="Challenges">Challenges</h1>
         <p>Comprehensive industrial inspection datasets will be provided for data challenges. Participants are invited for the following two data challenges:</p>
-        <ul>
-            <li><b>Challenge 1</b>: Data-Efficient Defect Detection (Tentative)</li>
-            <li><b>Challenge 2</b>: Data-Generation for Defect Detection (Tentative)</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Track</th>
+                    <th>Description</th>
+                    <th class="action-column">Make a Challenge Submission</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Challenge 1</td>
+                    <td>Data-Efficient Defect Detection</td>
+                    <td class="action-column"><a class="challenge-1" href="https://eval.ai/web/challenges/challenge-page/1934/overview" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <td>Challenge 2</td>
+                    <td>Data-Generation for Defect Detection</td>
+                    <td class="action-column"><a class="challenge-2" href="https://eval.ai/web/challenges/challenge-page/1935/overview" target="_blank"></a></td>
+                </tr>
+            </tbody>
+        </table>
         <h2>Important dates:</h2>
         <table class="date-table">
             <tbody>
@@ -790,6 +807,7 @@ footer {
 }
 table {
     width: 100%;
+    margin-top: 20px;
     border: 1px solid #D6D6D6;
     border-radius: 6px;
     border-spacing: 0;
@@ -816,6 +834,11 @@ th:first-child, td:first-child {
 tr:last-child td {
     border-bottom: none;
 }
+.action-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .summit-wrap {
     display: flex;
     align-items: center;
@@ -833,12 +856,20 @@ tr:last-child td {
 .follow-wrap {
     text-align: center;
 }
-.follow-wrap a {
+td a, .follow-wrap a {
     display: inline-block;
     width: 37px;
     height: 37px;
-    margin: 15px;
     background-size: cover;
+}
+.follow-wrap a {
+    margin: 15px;
+}
+a.challenge-1 {
+    background-image: url('./images/challenge-1.svg');
+}
+a.challenge-2 {
+    background-image: url('./images/challenge-2.svg');
 }
 a.twitter {
     background-image: url('./images/twitter.svg');
@@ -929,8 +960,8 @@ a.person {
         color: rgba(0, 0, 0, 0.54);
     }
     th {
-        height: 40px;
         padding: 0 10px;
+        line-height: 20px;
         font-size: 14px;
     }
     th:first-child, td:first-child {
@@ -938,6 +969,9 @@ a.person {
     }
     th:nth-child(2) {
         width: 110px;
+    }
+    .program-table th {
+        height: 40px;
     }
     td {
         padding: 0 10px;
@@ -961,9 +995,12 @@ a.person {
     .summit-wrap a {
         font-size: 14px;
     }
-    .follow-wrap a {
+    td a, .follow-wrap a {
         width: 20px;
         height: 20px;
+        margin: 5px 15px;
+    }
+    .follow-wrap a {
         margin: 5px 15px;
     }
 }
