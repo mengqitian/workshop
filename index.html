@@ -400,6 +400,13 @@
                 </div>
             </div>
             <div class="profile-wrap">
+                <img src="./images/profile35.svg">
+                <div>
+                    <p class="name">Arsalan Farooq</p>
+                    <p class="position">Apple</p>
+                </div>
+            </div>
+            <div class="profile-wrap">
                 <img src="./images/profile26.svg">
                 <div>
                     <p class="name">Furkan Küçük</p>
@@ -474,6 +481,13 @@
                 <div>
                     <p class="name">Hao Yan</p>
                     <p class="position">Arizona State University</p>
+                </div>
+            </div>
+            <div class="profile-wrap">
+                <img src="./images/profile36.svg">
+                <div>
+                    <p class="name">Carrie Yu</p>
+                    <p class="position">Apple</p>
                 </div>
             </div>
             <div class="profile-wrap">
@@ -560,9 +574,22 @@
         <div class="part-line"><span></span><img src="./images/flower.svg"><span></span></div>
         <h1 id="Follow-us">Follow us</h1>
         <div class="follow-wrap">
-            <a class="twitter" href="https://twitter.com/VISION_Workshop?s=09" target="_blank"></a>
-            <a class="email" href="mailto:vision.based.inspection@gmail.com"></a>
-            <a class="person" href="https://cvpr.thecvf.com/Conferences/2023/Pricing2" target="_blank"></a>
+            <a class="twitter" href="https://twitter.com/VISION_Workshop?s=09" target="_blank">
+                <span class="icon"></span>
+                <span>Tweets</span>
+            </a>
+            <a class="email" href="mailto:vision.based.inspection@gmail.com">
+                <span class="icon"></span>
+                <span>Workshop Queries</span>
+            </a>
+            <a class="person" href="https://cvpr.thecvf.com/Conferences/2023/Pricing2" target="_blank">
+                <span class="icon"></span>
+                <span>Registration</span>
+            </a>
+            <a class="email" href="mailto:vision.based.inspection+challenge@gmail.com">
+                <span class="icon"></span>
+                <span>Challenge Queries</span>
+            </a>
         </div>
     </div>
     <footer></footer>
@@ -745,7 +772,6 @@ header .arrow {
     font-size: 18px;
 }
 h1#Follow-us {
-    margin-bottom: 20px;
     font-size: 22px;
     text-align: center;
 }
@@ -779,7 +805,7 @@ h1#Follow-us {
     text-align: center;
 }
 .small-profile-group .profile-wrap {
-    margin: 0 30px 20px 0;
+    margin: 0 6px 20px 0;
 }
 .small-profile-group .profile-wrap:last-child {
     margin-right: 0;
@@ -787,10 +813,10 @@ h1#Follow-us {
 .profile-wrap .name {
     margin: 10px 0;
     line-height: 16px;
-    font-size: 16px;
+    font-size: 15px;
 }
 .small-profile-group .profile-wrap .name {
-    max-width: 130px;
+    max-width: 156px;
 }
 .profile-wrap .position {
     width: 210px;
@@ -798,7 +824,7 @@ h1#Follow-us {
     font-size: 14px;
 }
 .small-profile-group .profile-wrap .position {
-    max-width: 130px;
+    max-width: 156px;
     margin: 0 auto;
 }
 footer {
@@ -854,16 +880,28 @@ tr:last-child td {
     font-size: 14px;
 }
 .follow-wrap {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-td a, .follow-wrap a {
+td a, .follow-wrap a .icon {
     display: inline-block;
     width: 37px;
     height: 37px;
     background-size: cover;
 }
 .follow-wrap a {
-    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 25px;
+    line-height: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #008EFF;
+}
+.follow-wrap a .icon {
+    margin-bottom: 8px;
 }
 a.challenge-1 {
     background-image: url('./images/challenge-1.svg');
@@ -871,13 +909,13 @@ a.challenge-1 {
 a.challenge-2 {
     background-image: url('./images/challenge-2.svg');
 }
-a.twitter {
+a.twitter .icon {
     background-image: url('./images/twitter.svg');
 }
-a.email {
+a.email .icon {
     background-image: url('./images/email.svg');
 }
-a.person {
+a.person .icon {
     background-image: url('./images/person.svg');
 }
 
@@ -949,6 +987,7 @@ a.person {
     }
     .profile-wrap .name {
         margin: 4px 0;
+        font-size: 16px;
     }
     .small-profile-group .profile-wrap .name {
         width: 100%;
@@ -995,13 +1034,16 @@ a.person {
     .submit-wrap a {
         font-size: 14px;
     }
-    td a, .follow-wrap a {
+    td a, .follow-wrap a .icon {
         width: 20px;
         height: 20px;
         margin: 5px 15px;
     }
     .follow-wrap a {
-        margin: 5px 15px;
+        margin: 0;
+        font-size: 12px;
+        transform: scale(0.8);
+        white-space: nowrap;
     }
 }
 </style>
