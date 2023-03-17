@@ -144,7 +144,7 @@
                             <span>10:00 - 12:00</span>
                         </b>
                     </td>
-                    <td>Paper Presentation</td>
+                    <td>Best Paper Announcement and Paper Presentation</td>
                     <td></td>
                 </tr>
                 <tr class="bold-row">
@@ -232,7 +232,7 @@
             <li><b>Robust, Explainable Machine Learning</b> for high-stake applications</li>
             <li><b>Vision-based modeling, diagnosis, control, and quality improvement</b> of the manufacturing system</li>
         </ul>
-        <h2>Important dates:</h2>
+        <h2>Important Dates</h2>
         <div class="submit-outer">
             <p>For regular paper (CVPR proceedings):</p>
             <div class="submit-wrap">
@@ -287,7 +287,43 @@
         </table>
         <div class="part-line"><span></span><img src="./images/flower.svg"><span></span></div>
         <h1 id="Challenges">Challenges</h1>
-        <p>Comprehensive industrial inspection datasets will be provided for data challenges. Participants are invited for the following two data challenges:</p>
+        <h2>Awards</h2>
+        <div class="awards-group">
+            <div class="award-wrap">
+                <div class="place-wrap">
+                    <p class="place">1st place</p>
+                    <img src="./images/first.svg" alt="">
+                </div>
+                <img src="./images/studio.svg" alt="">
+                <p class="product">MacStudio</p>
+            </div>
+            <div class="award-wrap">
+                <div class="place-wrap">
+                    <p class="place">2nd place</p>
+                    <img src="./images/second.svg" alt="">
+                </div>
+                <img src="./images/iphone.svg" alt="">
+                <p class="product">iPhone 14 256G</p>
+            </div>
+            <div class="award-wrap">
+                <div class="place-wrap">
+                    <p class="place">3rd place</p>
+                    <img src="./images/third.svg" alt="">
+                </div>
+                <img src="./images/watch.svg" alt="">
+                <p class="product">Apple Watch Series 8</p>
+            </div>
+            <div class="award-wrap">
+                <div class="place-wrap">
+                    <p class="place">Most Innovative awards</p>
+                    <img src="./images/innovative.svg" alt="">
+                </div>
+                <img src="./images/ipad.svg" alt="">
+                <p class="product">Apple iPad 10.9”</p>
+            </div>
+        </div>
+        <h2>Participation</h2>
+        <p>The detailed instructions for the data challenge and the dataset can be found via the submission links.</p>
         <table>
             <thead>
                 <tr>
@@ -309,7 +345,7 @@
                 </tr>
             </tbody>
         </table>
-        <h2>Important dates:</h2>
+        <h2>Important Dates</h2>
         <table class="date-table">
             <tbody>
                 <tr>
@@ -334,7 +370,6 @@
                 </tr>
             </tbody>
         </table>
-        <p class="tip">(The detailed instructions for the data challenge will be provided when the dataset is released.)</p>
         <div class="part-line"><span></span><img src="./images/flower.svg"><span></span></div>
         <h1 id="Organizers">Organizers</h1>
         <h2>Workshop Organizers</h2>
@@ -892,13 +927,10 @@ th, td {
 }
 th {
     font-weight: 500;
-    background: #D5D5D5;
-}
-td {
-    background: #F8F8F8;
+    background: rgba(213, 213, 213, 0.50);
 }
 tr.bold-row td {
-    background: rgba(213, 213, 213, 0.50);
+    background: rgba(248, 248, 248, 0.50);
 }
 th:first-child, td:first-child {
     width: 200px;
@@ -912,12 +944,10 @@ tr:last-child td {
     justify-content: center;
 }
 .icon-column span {
-    position: relative;
+    display: flex;
 }
 .icon-column img {
-    position: absolute;
-    top: 2px;
-    right: -32px;
+    margin-left: 10px;
 }
 .submit-outer, .submit-wrap {
     display: flex;
@@ -932,11 +962,6 @@ tr:last-child td {
 .submit-wrap a {
     text-decoration: none;
     color: #008EFF;
-}
-.tip {
-    margin-top: 20px;
-    line-height: 20px;
-    font-size: 14px;
 }
 .follow-wrap {
     display: flex;
@@ -976,6 +1001,29 @@ a.email .icon {
 }
 a.person .icon {
     background-image: url('./images/person.svg');
+}
+.awards-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.award-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 246px;
+    text-align: center;
+}
+.place-wrap {
+    margin-bottom: 20px;
+}
+.place {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.product {
+    margin-top: 10px;
 }
 
 @media(max-width: 767px) {
@@ -1086,11 +1134,13 @@ a.person .icon {
         display: flex;
         flex-direction: column;
     }
+    .icon-column span {
+        display: unset;
+    }
     .icon-column img {
-        top: 28px;
-        right: -24px;
         width: 18px;
         height: 17px;
+        margin-left: 0;
     }
     .submit-outer {
         flex-direction: column;
@@ -1117,6 +1167,28 @@ a.person .icon {
         font-size: 12px;
         transform: scale(0.8);
         white-space: nowrap;
+    }
+    .award-wrap {
+        font-size: 12px;
+    }
+    .award-wrap {
+        width: 132px;
+        height: 200px;
+    }
+    .award-wrap:first-child {
+        margin-bottom: 40px;
+    }
+    .place-wrap {
+        margin-bottom: 0;
+    }
+    .place {
+        margin-bottom: 10px;
+    }
+    .product {
+        margin-top: 0;
+    }
+    .award-wrap img {
+        transform: scale(0.8);
     }
 }
 </style>
