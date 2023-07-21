@@ -96,7 +96,6 @@
         <div class="awards-group">
             <div class="award-wrap">
                 <div class="place-wrap">
-                    <p class="place">1st prize</p>
                     <img src="./images/first.svg" alt="">
                 </div>
                 <img src="./images/studio.svg" alt="">
@@ -104,7 +103,6 @@
             </div>
             <div class="award-wrap">
                 <div class="place-wrap">
-                    <p class="place">2nd prize</p>
                     <img src="./images/second.svg" alt="">
                 </div>
                 <img src="./images/iphone.svg" alt="">
@@ -112,7 +110,6 @@
             </div>
             <div class="award-wrap">
                 <div class="place-wrap">
-                    <p class="place">3rd prize</p>
                     <img src="./images/third.svg" alt="">
                 </div>
                 <img src="./images/watch.svg" alt="">
@@ -120,14 +117,13 @@
             </div>
             <div class="award-wrap">
                 <div class="place-wrap">
-                    <p class="place">Most Innovative awards</p>
                     <img src="./images/innovative.svg" alt="">
                 </div>
                 <img src="./images/ipad.svg" alt="">
                 <p class="product">Apple iPad 10.9”</p>
             </div>
         </div>
-        <table>
+        <table class="awards-table">
             <thead>
                 <tr>
                     <th>Track</th>
@@ -1095,6 +1091,9 @@ tr.bold-row td {
 th:first-child, td:first-child {
     width: 200px;
 }
+.awards-table th:first-child, .awards-table td:first-child {
+    width: 100px;
+}
 tr:last-child td {
     border-bottom: none;
 }
@@ -1205,7 +1204,7 @@ a.person .icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 .award-wrap {
     display: flex;
@@ -1217,10 +1216,6 @@ a.person .icon {
 }
 .place-wrap {
     margin-bottom: 20px;
-}
-.place {
-    margin-bottom: 20px;
-    font-weight: 500;
 }
 .product {
     margin-top: 10px;
@@ -1398,9 +1393,6 @@ a.person .icon {
     }
     .place-wrap {
         margin-bottom: 0;
-    }
-    .place {
-        margin-bottom: 10px;
     }
     .product {
         margin-top: 0;
