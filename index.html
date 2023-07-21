@@ -1088,11 +1088,14 @@ th {
 tr.bold-row td {
     background: #F8F8F8;
 }
-th:first-child, td:first-child {
-    width: 200px;
+.awards-table th {
+    min-width: 100px;
 }
-.awards-table th:first-child, .awards-table td:first-child {
-    width: 100px;
+.awards-table th:last-child {
+    min-width: 200px;
+}
+.program-table th:first-child {
+    width: 120px;
 }
 tr:last-child td {
     border-bottom: none;
@@ -1119,7 +1122,6 @@ td .tip-group:last-child {
     margin-bottom: 0;
 }
 .tip-group a {
-    position: relative;
     width: fit-content;
     height: fit-content;
     font-size: 14px;
@@ -1130,12 +1132,9 @@ td .tip-group:last-child {
 .tip-group a::after {
     content: '';
     display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: -20px;
     width: 13.28px;
     height: 13.28px;
-    transform: translateY(-50%);
+    transform: translate(6px, 2px);
 }
 .tip-group a.download::after {
     background: url('./images/download.svg');
